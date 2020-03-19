@@ -48,15 +48,10 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-                        <rect width="100%" height="100%" fill="#777" /></svg>
+                    <img class="img-responsive" height="250px" src="images/1.jpg" />
                     <div class="container">
                         <div class="carousel-caption text-left">
-                            <h1>Example headline.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                            <?= $Wcms->block('carousel_1') ?>
                         </div>
                     </div>
                 </div>
@@ -83,29 +78,7 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <?php } ?>
 
-
-        <!-- Marketing messaging and featurettes
-  ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center padding40">
-                    <?= $Wcms->page('content') ?>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid blueBackground whiteFont">
-            <div class="row">
-                <div class="col-lg-12 text-center padding40">
-                    <?= $Wcms->block('subside') ?>
-                </div>
-            </div>
-        </div>
-
-        <?php if ($Wcms->currentPage == 'home') { ?>
         <div class="container marketing">
             <!-- Three columns of text below the carousel -->
             <div class="row">
@@ -225,11 +198,26 @@
         </div><!-- /.container -->
         <?php } ?>
 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center p-4">
+                    <?= $Wcms->page('content') ?>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center p-4">
+                    <?= $Wcms->block('subside') ?>
+                </div>
+            </div>
+        </div>
 
         <!-- FOOTER -->
         <footer class="container-fluid">
             <p class="float-right"><a href="#">Back to top</a></p>
-            <div class="text-right padding20">
+            <div class="text-center p-2">
                 <?= $Wcms->footer() ?>
             </div>
         </footer>
