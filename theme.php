@@ -20,9 +20,6 @@
 <body>
 	<?= $Wcms->settings() ?>
 	<?= $Wcms->alerts() ?>
-    
-    <?= $Wcms->page('content') ?>
-	<?= $Wcms->footer() ?>
 	
 	<header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
