@@ -40,7 +40,7 @@
     </header>
 
     <main role="main">
-        <?php if ($Wcms->currentPage == 'home'): ?>
+        <?php if ($Wcms->currentPage == 'home') { ?>
         <div id="homeCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
