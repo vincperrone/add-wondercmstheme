@@ -48,10 +48,10 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="img-responsive" height="250px" src="<?= $Wcms->asset('images/1.jpg') ?>" />
+                    <img style="height:auto" src="<?= $Wcms->asset('images/1.jpg') ?>" />
                     <div class="container">
                         <div class="carousel-caption text-left">
-                            <?= $Wcms->block('carousel_1') ?>
+                            <?= $Wcms->page('carousel_1') ?>
                         </div>
                     </div>
                 </div>
