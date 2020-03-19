@@ -45,7 +45,6 @@
             <ol class="carousel-indicators">
                 <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#homeCarousel" data-slide-to="1"></li>
-                <li data-target="#homeCarousel" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -74,19 +73,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-                        <rect width="100%" height="100%" fill="#777" /></svg>
-                    <div class="container">
-                        <div class="carousel-caption text-right">
-                            <h1>One more for good measure.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-                        </div>
-                    </div>
-                </div>
             </div>
             <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -107,7 +93,6 @@
             <div class="row">
                 <div class="col-lg-12 text-center padding40">
                     <?= $Wcms->page('content') ?>
-
                 </div>
             </div>
         </div>
@@ -116,13 +101,12 @@
             <div class="row">
                 <div class="col-lg-12 text-center padding40">
                     <?= $Wcms->block('subside') ?>
-
                 </div>
             </div>
         </div>
 
+        <?php if ($Wcms->currentPage == 'home') { ?>
         <div class="container marketing">
-
             <!-- Three columns of text below the carousel -->
             <div class="row">
                 <div class="col-lg-4">
@@ -239,6 +223,7 @@
             <!-- /END THE FEATURETTES -->
 
         </div><!-- /.container -->
+        <?php } ?>
 
 
         <!-- FOOTER -->
@@ -246,7 +231,6 @@
             <p class="float-right"><a href="#">Back to top</a></p>
             <div class="text-right padding20">
                 <?= $Wcms->footer() ?>
-
             </div>
         </footer>
     </main>
